@@ -1,0 +1,392 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.title{
+    margin-top: 100px;
+    padding: 100px;
+    width: 850px;
+    font-size: 90px;
+    white-space:normal;
+    color:aliceblue;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-color: #203a41;
+    font-family: Trebuchet;
+    height: auto;
+
+}
+
+.home{
+    background-color:#369a92;
+    height: 100%;
+    width: 100%;
+}
+
+.buttonHome{
+    padding: 14px 25px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    border: 2.6px solid aliceblue;
+    margin-left: 100px;
+    font-size: 28px;
+    margin-bottom: 100px;
+}
+
+.buttonHome{
+    border: none;
+    outline: none;
+    color: #000000;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 5px;
+}
+
+.buttonHome:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 5px;
+}
+
+.buttonHome:active {
+    color: #000
+}
+
+.buttonHome:active:after {
+    background: transparent;
+}
+
+.buttonHome:hover:before {
+    opacity: 1;
+}
+
+.buttonHome:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+
+
+
+.twoColumns {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 150px;
+  }
+  
+  .twoColumns > .colorColumn {
+    flex: 1;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 800px;
+    width: 100%;
+  }
+
+  @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+  .twoColumns > .textColumn {
+    flex: 1;
+    padding: 20px; 
+  }
+
+.section-transition {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  transition: background-color 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.active-section .section-transition {
+  background-color: rgba(0, 0, 0, 0.8); 
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.textColumn {
+    background-color: #203a41;
+}
+
+.textAbout {
+    color: aliceblue;
+    font-weight: 300;
+    font-size: 23px;
+    margin-left: 80px;
+    line-height: 35px;
+}
+
+.icons{
+  display: flex;
+  margin-top: 8%;
+  gap: 15px;
+  margin-left: 80px;
+} 
+
+.titleAbout {
+    color: #10e0e7;
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 80px;
+    padding-top: 150px;
+}
+
+ .dividerContainer{
+  text-align: center;
+ }
+
+.divider{
+  width: 900px;
+  height: 1.2px;
+  background-color: #066c70a1;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.titleWork{
+  color: #10e0e7;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+.parrafoWork{
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.imageContainer{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
+}
+
+
+.containerCars {
+    position: relative;
+    width: 50%;
+  }
+  
+  .cars{
+    opacity: 1;
+    display: block;
+    width: 95%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    margin-left: 20px;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .containerCars:hover .cars {
+    opacity: 0.3;
+  }
+  
+  .containerCars:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    padding: 16px 32px;
+    
+  }
+  
+  .textCar {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 16px 32px;
+    margin-top: -60px;
+    font-weight: 300;
+  }
+  
+  
+  
+  
+  .containerDogs {
+    position: relative;
+    width: 50%;
+  }
+  
+  
+  .dogs{
+      opacity: 1;
+      display: block;
+      width: 95.4%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+      margin-left: 10px;
+      border-radius: 5px;
+  }
+
+.middleDog {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .containerDogs:hover .dogs {
+    opacity: 0.3;
+  }
+  
+  .containerDogs:hover .middleDog {
+    opacity: 1;
+  }
+  
+  .textDog {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    padding: 16px 32px;
+
+  }
+
+  .textDog2 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 16px 32px;
+    margin-top: -60px;
+    font-weight: 300;
+  }
+
+
+.contact{
+  margin-left: 20px;
+  margin-top: 200px;
+  margin-bottom: 300px;
+}
+
+.titleContact{
+  color: #10e0e7;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 40px;
+}
+.textContact{
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+
+/**EMAIL SECTION**/
+
+.email{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color:rgb(255, 255, 255);
+  transition: color 0.3s;
+  margin-top: 40px;
+}
+
+.emailContainer:hover .emailIcon {
+  color: #ff6600; 
+}
+
+.emailContainer:hover .emailText {
+  color: #ff6600; 
+}
+
+.hoverable:hover {
+  color: #ff6600;
+}
+
+
+.emailIcon{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 10px;
+
+}
+
+.emailText{
+  display: flex;
+  font-weight: 500;
+  color: inherit;
+  font-size: 20px;
+  text-decoration: none;
+  align-items: center;
+ 
+}
+

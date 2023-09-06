@@ -1,0 +1,32 @@
+
+.dividerFooter{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: -20px;
+   }
+  
+  .dividerFoot{
+    width: 900px;
+    height: 1.2px;
+    background-color: #066c70a1;
+    display: inline-block;
+    border-radius: 5px;
+  }
+
+  .iconosFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
+    cursor: pointer;
+  }
+
+  .iconosFooter :hover{
+    color: #ff6600;
+  }
+
+
+
+  
