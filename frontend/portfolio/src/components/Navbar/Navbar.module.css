@@ -7,15 +7,18 @@ body, html {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    position: fixed;
     top: 0;
     width: 100%;
-    font-size: 20px;
+    font-size: 16px;
     background-color:#369a92;
-    margin-top: auto;
     padding-bottom: 22px;
     padding-top: 20px;
+    font-family: Lato;
 }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 .button {
     background: none;
@@ -28,11 +31,12 @@ body, html {
     text-align: center;
     text-decoration: none;
     font-weight: 548;
+    font-family: Lato;
 }
 
 .button:hover {
-    color: #e7e499;
-    transform: scale(1.1);
+    color: #ff6600;
+    transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -48,8 +52,26 @@ body, html {
     font-weight: 548;
     border: 2.6px solid aliceblue;
     border-radius: 5px;
+    display: flex;
+    font-family: Lato;
 }
 
 .button2:hover {
-    color: #e7e499;
+    color: #ff6600;
+    border-color: #ff6600;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
+
+@media screen and (max-width: 480px) {
+    .list {
+      background-color:#203a41;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .button,
+  .button2 {
+    margin: 10px 0;
+  }
+  }

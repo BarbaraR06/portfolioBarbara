@@ -14,17 +14,33 @@ import Tailwind from "../icons/Tailwind";
 import Postgres from "../icons/Postgres";
 import Mongo from "../icons/Mongo";
 import IconNodeJs from "../icons/IconNodeJs";
+import { useEffect, useState } from "react";
 
 const Home = () => {
+  const [curtainVisible, setCurtainVisible] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      console.log(curtainVisible ? styles.visible : "");
+      setCurtainVisible(false);
+    }, 1000); 
+    return () => clearTimeout(timeout);
+  }, []);
+
+
   return (
     <div>
       <Navbar />
+      {curtainVisible && <div className={styles.blackCurtain}></div>}
       <section className={styles.home} id="home">
+        <div className={styles.containerHome}>
         <h2 className={styles.title}>
           {" "}
-          Elevating Experiencies: Where design meets development{" "}
+          Elevating Experiencies: 
+          Where design meets development{" "}
         </h2>
         <button className={styles.buttonHome}> See what I've done! </button>
+        </div>
       </section>
       <section className={`${styles.about} ${styles.twoColumns}`} id="about">
         <div className={`${styles.colorColumn}`}></div>
@@ -79,8 +95,8 @@ const Home = () => {
               <a href="https://dogs-henry-two.vercel.app" target="_blank">
                 <img className={styles.dogs} src={dogs} alt="dogs" />
                 <div className={styles.middleDog}>
-                  <h3 className={styles.textDog}> Dogs </h3>
-                  <h2 className={styles.textDog2}> App </h2>
+                  <h3 className={styles.text}> Dogs </h3>
+                  <h2 className={styles.textCar}> App </h2>
                 </div>
               </a>
             </div>

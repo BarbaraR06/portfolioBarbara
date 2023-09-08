@@ -1,34 +1,64 @@
+@font-face{
+  src: url("../../assets/DMSerifDisplay-Regular.ttf");
+  font-family: DMSerifDisplay;
+}
+
+@font-face{
+  src: url("../../assets/AbrilFatface-Regular.ttf");
+  font-family: AbrilFatface;
+}
+
 *{
   margin: 0;
   padding: 0;
 }
 
-
 .title{
-    margin-top: 100px;
-    padding: 100px;
-    width: 850px;
-    font-size: 90px;
-    white-space:normal;
-    color:aliceblue;
+  padding: 100px;
+  width: 900px;
+  font-size: 75px;
+  white-space:normal;
+  color:aliceblue;
+  font-weight: lighter;
+  font-family: AbrilFatface;
 }
 
 html {
     scroll-behavior: smooth;
   }
 
+
 body{
     background-color: #203a41;
-    font-family: Trebuchet;
-    height: auto;
-
 }
 
 .home{
-    background-color:#369a92;
     height: 100%;
     width: 100%;
+    background-color:#369a92;
 }
+
+
+@media screen and (max-width: 480px) {
+  body{
+    background-color: #203a41;
+  }
+  .home{
+    height: 100%;
+    width: 100%;
+    background-color:#203a41;
+    flex-direction: column;
+    align-items: center;
+}
+
+}
+
+.containerHome{
+  height: 700px;
+  top: 0;
+  width: 100%;
+}
+
 
 .buttonHome{
     padding: 14px 25px;
@@ -41,7 +71,6 @@ body{
     border: 2.6px solid aliceblue;
     margin-left: 100px;
     font-size: 28px;
-    margin-bottom: 100px;
 }
 
 .buttonHome{
@@ -170,6 +199,7 @@ body{
     font-size: 23px;
     margin-left: 80px;
     line-height: 35px;
+    font-family: Lato;
 }
 
 .icons{
@@ -181,6 +211,7 @@ body{
 
 .titleAbout {
     color: #10e0e7;
+    font-family: Lato;
     font-size: 25px;
     font-weight: 500;
     margin-left: 80px;
@@ -205,6 +236,7 @@ body{
   font-weight: 500;
   margin-top: 40px;
   text-align: center;
+  font-family: Lato;
 }
 
 
@@ -215,6 +247,8 @@ body{
   margin-top: 40px;
   text-align: center;
   margin-bottom: 50px;
+  font-family: AbrilFatface;
+  font-weight: lighter;
 }
 
 .imageContainer{
@@ -272,6 +306,7 @@ body{
     padding: 16px 32px;
     margin-top: -60px;
     font-weight: 300;
+    margin-top: 10px;
   }
   
   
@@ -313,21 +348,6 @@ body{
     opacity: 1;
   }
   
-  .textDog {
-    color: rgb(255, 255, 255);
-    font-size: 50px;
-    padding: 16px 32px;
-
-  }
-
-  .textDog2 {
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    padding: 16px 32px;
-    margin-top: -60px;
-    font-weight: 300;
-  }
-
 
 .contact{
   margin-left: 20px;
@@ -340,12 +360,16 @@ body{
   font-size: 25px;
   font-weight: 500;
   margin-top: 40px;
+  font-family: Lato;
 }
+
 .textContact{
   color: #ffffff;
   font-size: 60px;
   font-weight: 600;
   margin-top: 40px;
+  font-family: AbrilFatface;
+  font-weight: lighter;
 }
 
 /**EMAIL SECTION**/
@@ -387,6 +411,17 @@ body{
   font-size: 20px;
   text-decoration: none;
   align-items: center;
- 
+  font-family: Lato;
 }
 
+.blackCurtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 9999;
+  opacity: 1; 
+  transition: transform 1s ease-in-out;
+}

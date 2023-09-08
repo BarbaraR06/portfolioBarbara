@@ -17,9 +17,9 @@ const Navbar = () => {
           <div className={styles.menu}>
            <ul className={styles.list}>
             <li><button className={styles.button} onClick={() => handleNav("home")}> HOME </button></li>
-            <li><button className={styles.button} onClick={() => handleNav("work")}> WORK </button></li>
             <li><button className={styles.button} onClick={() => handleNav("about")}> ABOUT </button></li>
-            <li><button className={styles.button2} onClick={() => handleNav("contact")}> CONTACT ME! </button></li>
+            <li><button className={styles.button} onClick={() => handleNav("work")}> WORK </button></li>
+            <li><button className={styles.button2} onClick={() => handleNav("contact")}> CONTACT ME </button></li>
            </ul>
         </div>
     )
