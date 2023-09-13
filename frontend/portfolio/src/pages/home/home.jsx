@@ -144,7 +144,7 @@ const Home = () => {
             </div>
             <div className={styles.containerDogs}>
               <a href="https://dogs-henry-two.vercel.app" target="_blank">
-                <img className={styles.dogs} src={dogs} alt="dogs" />
+                <img className={styles.cars} src={dogs} alt="dogs" />
                 <div className={styles.middleDog}>
                   <h3 className={styles.text}> Dogs </h3>
                   <h2 className={styles.textCar}> App </h2>

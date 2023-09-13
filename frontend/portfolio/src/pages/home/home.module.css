@@ -311,6 +311,7 @@ width: 100%;
     backface-visibility: hidden;
     border-radius: 5px;
     margin-left: 20px;
+    padding-bottom: 30px;
   }
   
   .middle {
@@ -349,24 +350,11 @@ width: 100%;
   }
   
   
-  
-  
   .containerDogs {
     position: relative;
     width: 50%;
   }
   
-  
-  .dogs{
-      opacity: 1;
-      display: block;
-      width: 95.4%;
-      height: auto;
-      transition: .5s ease;
-      backface-visibility: hidden;
-      margin-left: 10px;
-      border-radius: 5px;
-  }
 
 .middleDog {
     transition: .5s ease;
@@ -408,7 +396,7 @@ width: 100%;
   font-weight: 600;
   margin-top: 20px;
   font-family: Poppins;
-  font-weight: lighter;
+  font-weight: 1000;
 }
 
 /**EMAIL SECTION**/
@@ -454,7 +442,7 @@ width: 100%;
 
 
 
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 780px) {
     body{
       background-color: #203a41;
     }
@@ -571,6 +559,6 @@ width: 100%;
     flex-direction: column;
   }
   
-  } */
+  }
 
 
