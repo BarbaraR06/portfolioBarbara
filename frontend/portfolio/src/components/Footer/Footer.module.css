@@ -1,8 +1,8 @@
 
 .dividerFooter{
     text-align: center;
-    margin-bottom: 30px;
-    margin-top: -20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
    }
   
   .dividerFoot{
@@ -28,5 +28,28 @@
   }
 
 
-
+.dividerFoot2{
+  width: 100%;
+  height: 1.2px;
+  background-color: #066c70a1;
+  display: inline-block;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 70px;
+  margin-top: 2px;
+}
   
+.logoFooter{
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 70px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  }
+
+  .logoFooter:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}

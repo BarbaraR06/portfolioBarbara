@@ -4,15 +4,20 @@ import { useDispatch } from "react-redux";
 import axios from "axios";
 import IconLinkedin from "./IconLinkedin";
 import IconBehanceSquare from "./IconBehanceSquare";
+import Logo from "../../pages/icons/Logo";
 
 const Footer = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.dividerFooter}>
+        <span className={styles.dividerFoot2}> </span>
+        <a href="#home">
+          <Logo className={styles.logoFooter} />
         <span className={styles.dividerFoot}></span>
+        </a>
         <div className={styles.iconosFooter}>
           <a target="_blank" href="https://www.behance.net/barbararuiz06">
-              <IconBehanceSquare width="60px" height="60px" />
+            <IconBehanceSquare width="60px" height="60px" />
           </a>
           <a target="_blank" href="https://www.linkedin.com/in/barbararuiz6/">
             <IconLinkedin width="60px" height="60px" />

@@ -13,12 +13,24 @@ body, html {
     background-color:#369a92;
     padding-bottom: 22px;
     padding-top: 20px;
-    font-family: Lato;
+    font-family: Poppins;
 }
 
 html {
     scroll-behavior: smooth;
   }
+
+.logo {
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease-in-out;
+
+}
 
 .button {
     background: none;
@@ -31,7 +43,7 @@ html {
     text-align: center;
     text-decoration: none;
     font-weight: 548;
-    font-family: Lato;
+    font-family: Poppins;
 }
 
 .button:hover {
@@ -53,7 +65,7 @@ html {
     border: 2.6px solid aliceblue;
     border-radius: 5px;
     display: flex;
-    font-family: Lato;
+    font-family: Poppins;
 }
 
 .button2:hover {
@@ -63,7 +75,7 @@ html {
     transition: transform 0.3s ease-in-out;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1100px) {
     .list {
       background-color:#203a41;
       flex-direction: column;
