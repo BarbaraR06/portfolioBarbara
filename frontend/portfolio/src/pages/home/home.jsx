@@ -16,25 +16,30 @@ import Mongo from "../icons/Mongo";
 import IconNodeJs from "../icons/IconNodeJs";
 import { useEffect, useState } from "react";
 import pfp from "../../assets/pfp.jpg";
-
+import IconGit from "../icons/IconGit";
 
 const Home = () => {
- 
   return (
-    <div className={styles.inicio} >
-
+    <div className={styles.inicio}>
       <section className={styles.home} id="home">
-      <Navbar/>
+        <Navbar />
         <div className={styles.containerHome}>
           <div className={styles.homePhoto}>
             <h2 className={styles.title}>
-              Donde el <span style={{ color: "#ff6600" }}>diseño</span> se
-              encuentra con el{" "}
-              <span style={{ color: " #ff6600" }}>desarrollo</span>
+              Donde el{" "}
+              <span className={styles.span}>
+                diseñ<span style={{ color: "#ff6600" }}>o</span>
+              </span>{" "}
+              se encuentra con el{" "}
+              <span className={styles.span} style={{ color: " #ff6600" }}>
+                desarrollo
+              </span>
             </h2>
             <img src={pfp} alt="" className={styles.imgPfp} />
           </div>
-          <button className={styles.buttonHome}> Mira mis proyectos! </button>
+          <a href="#work">
+            <button className={styles.buttonHome}> Mira mis proyectos! </button>
+          </a>
         </div>
       </section>
 
@@ -45,36 +50,57 @@ const Home = () => {
           <h3 className={styles.textAbout}>
             {" "}
             <br />
-            ¡Hola! Mi nombre es Barbara, soy de Santa Fe, Argentina. Soy
-            Desarrolladora Full Stack y también soy estudiante de Diseño
+            ¡Hola! Soy Barbara, Desarrolladora Full Stack y estudiante de Diseño
             Industrial en la Universidad Nacional del Litoral.
             <br />
-            <br />
-            Mi objetivo principal es seguir creciendo profesionalmente en el
-            ámbito laboral. Busco constantemente oportunidades desafiantes que
-            me permitan adquirir experiencia y ampliar mis conocimientos tanto
-            en el desarrollo como en el diseño. Estoy emocionada de ser parte de
-            proyectos que fomenten mi crecimiento tanto personal como
-            profesional.
+            Soy una persona creativa, autodidacta y colaborativa, con
+            experiencia en metodologías ágiles y una pasión por el desarrollo
+            web. Disfruto cada paso de mi camino y me encanta ofrecer soluciones
+            excepcionales. Estoy emocionada por seguir creciendo
+            profesionalmente y explorando nuevas oportunidades que me permitan
+            continuar aprendiendo y desarrollándome tanto en el mundo del
+            desarrollo como en el diseño.
           </h3>
           <div className={styles.icons}>
-            <IconBxlJavascript width="48px" height="48px" />
-            <IconBxlReact width="48px" height="48px" />
-            <IconCss3 width="48px" height="48px" />
-            <Tailwind width="48px" height="48px" />
-            <IconHtml5 width="48px" height="48px" />
-            <Figma width="48px" height="48px" />
-            <Postgres width="48px" height="48px" />
-            <Mongo width="48px" height="48px" />
-            <IconNodeJs width="48px" height="48px" />
+            <div>
+            <IconBxlJavascript width="60%" height="60%" />
+            </div>
+            <div>
+            <IconBxlReact width="60%" height="60%" />
+            </div>
+            <div>
+            <IconCss3 width="60%" height="60%" />
+            </div>
+            <div>
+            <Tailwind width="60%" height="60%" />
+            </div>
+            <div>
+            <IconHtml5 width="60%" height="60%" />
+            </div>
+            <div>
+            <Figma width="60%" height="60%" />
+            </div>
+            <div>
+            <Postgres width="60%" height="60%" />
+            </div>
+            <div>
+            <Mongo width="60%" height="60%" />
+            </div>
+            <div>
+            <IconNodeJs width="60%" height="60%" />
+            </div>
+            <div>
+            <IconGit width="60%" height="60%" />
+            </div>
           </div>
         </div>
       </section>
 
-      <section className={styles.About2}>
+      <section>
         <div className={styles.containerAbout2}>
           <div className={styles.textAbout2}>
             <h3 className={styles.titleAbout2}> HABILIDADES TÉCNICAS </h3>
+            <div className={styles.parrafoAbout}>
             <p className={styles.parrafoAbout2}>
               {" "}
               Cuento con un conjunto diverso de habilidades técnicas. Desde
@@ -87,12 +113,14 @@ const Home = () => {
                 versátil y capaz de enfrentar una variedad de desafíos.
               </strong>{" "}
             </p>
+            </div>
           </div>
           <div className={styles.textAbout2}>
             <h3 className={styles.titleAbout2}>
               {" "}
               ENFOQUE EN DISEÑO Y DESARROLLO{" "}
             </h3>
+            <div  className={styles.parrafoAbout}> 
             <p className={styles.parrafoAbout2}>
               {" "}
               Como estudiante de Diseño Industrial poseo una perspectiva única
@@ -103,9 +131,11 @@ const Home = () => {
               funcionen bien, sino que también brinden una
               <strong> experiencia excepcional</strong> al usuario.
             </p>
+            </div>
           </div>
           <div className={styles.textAbout2}>
             <h3 className={styles.titleAbout2}> APRENDIZAJE CONTINUO </h3>
+            <div  className={styles.parrafoAbout}>
             <p className={styles.parrafoAbout2}>
               {" "}
               Mi principal objetivo es seguir creciendo profesionalmente.
@@ -119,6 +149,7 @@ const Home = () => {
               lo que me permite aportar un alto valor a cualquier equipo y
               proyecto en el que trabaje.
             </p>
+            </div>
           </div>
         </div>
       </section>
@@ -128,8 +159,7 @@ const Home = () => {
           <div className={styles.textWork}>
             <h5 className={styles.titleWork}> PROYECTOS </h5>
             <h4 className={styles.parrafoWork}>
-              {" "}
-              Mira mis proyectos realizados{" "}
+              Mira mis proyectos realizados
             </h4>
           </div>
           <div className={styles.imageContainer}>
@@ -142,15 +172,26 @@ const Home = () => {
                 </div>
               </a>
             </div>
-            <div className={styles.containerDogs}>
+            <div className={styles.containerCars}>
               <a href="https://dogs-henry-two.vercel.app" target="_blank">
                 <img className={styles.cars} src={dogs} alt="dogs" />
-                <div className={styles.middleDog}>
+                <div className={styles.middle}>
                   <h3 className={styles.text}> Dogs </h3>
                   <h2 className={styles.textCar}> App </h2>
                 </div>
               </a>
             </div>
+          </div>
+          <div className={styles.downloadContainer}>
+            <a
+              className={styles.download}
+              target="_blank"
+              href="https://drive.google.com/file/d/1BYLIQkAfxK_Cl3cr7dLMzsLMl50PgYze/view?usp=sharing"
+              download="https://drive.google.com/file/d/1BYLIQkAfxK_Cl3cr7dLMzsLMl50PgYze/view?usp=sharing"
+            >
+              {" "}
+              Descargar CV
+            </a>
           </div>
           <div className={styles.dividerContainer}>
             <span className={styles.divider}></span>
@@ -162,7 +203,7 @@ const Home = () => {
         <div className={styles.contact}>
           <h5 className={styles.titleContact}> CONTACTO </h5>
           <h3 className={styles.textContact}> Enviame un mensaje! </h3>
-          <div className={`${styles.email} ${styles.emailContainer}`}>
+          <div className={styles.emailContainer}>
             <a
               className={styles.emailText}
               href="mailto:barbararuiz063@gmail.com"

@@ -4,6 +4,7 @@ import { useDispatch } from "react-redux";
 import axios from "axios";
 import IconLinkedin from "./IconLinkedin";
 import IconBehanceSquare from "./IconBehanceSquare";
+import IconGithub from "./Github";
 import Logo from "../../pages/icons/Logo";
 
 const Footer = () => {
@@ -21,6 +22,9 @@ const Footer = () => {
           </a>
           <a target="_blank" href="https://www.linkedin.com/in/barbararuiz6/">
             <IconLinkedin width="60px" height="60px" />
+          </a>
+          <a target="_blank" href="https://github.com/BarbaraR06">
+            <IconGithub width="60px" height="60px" />
           </a>
         </div>
       </div>
