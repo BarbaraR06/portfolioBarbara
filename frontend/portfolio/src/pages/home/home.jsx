@@ -3,6 +3,8 @@ import React from "react";
 import styles from "../home/home.module.css";
 import dogs from "../../assets/dogs.png";
 import cars from "../../assets/cars.png";
+import event from "../../assets/event.png";
+import cook from "../../assets/cook.png";
 import Footer from "../../components/Footer/Footer";
 import IconMail from "../icons/IconMail";
 import Figma from "../icons/Figma";
@@ -38,7 +40,7 @@ const Home = () => {
             <img src={pfp} alt="" className={styles.imgPfp} />
           </div>
           <a href="#work">
-            <button className={styles.buttonHome}> Mira mis proyectos! </button>
+            <button className={styles.buttonHome}> ¡MIRA MIS PROYECTOS! </button>
           </a>
         </div>
       </section>
@@ -63,34 +65,34 @@ const Home = () => {
           </h3>
           <div className={styles.icons}>
             <div>
-            <IconBxlJavascript width="60%" height="60%" />
+              <IconBxlJavascript width="60%" height="60%" />
             </div>
             <div>
-            <IconBxlReact width="60%" height="60%" />
+              <IconBxlReact width="60%" height="60%" />
             </div>
             <div>
-            <IconCss3 width="60%" height="60%" />
+              <IconCss3 width="60%" height="60%" />
             </div>
             <div>
-            <Tailwind width="60%" height="60%" />
+              <Tailwind width="60%" height="60%" />
             </div>
             <div>
-            <IconHtml5 width="60%" height="60%" />
+              <IconHtml5 width="60%" height="60%" />
             </div>
             <div>
-            <Figma width="60%" height="60%" />
+              <Figma width="60%" height="60%" />
             </div>
             <div>
-            <Postgres width="60%" height="60%" />
+              <Postgres width="60%" height="60%" />
             </div>
             <div>
-            <Mongo width="60%" height="60%" />
+              <Mongo width="60%" height="60%" />
             </div>
             <div>
-            <IconNodeJs width="60%" height="60%" />
+              <IconNodeJs width="60%" height="60%" />
             </div>
             <div>
-            <IconGit width="60%" height="60%" />
+              <IconGit width="60%" height="60%" />
             </div>
           </div>
         </div>
@@ -101,18 +103,19 @@ const Home = () => {
           <div className={styles.textAbout2}>
             <h3 className={styles.titleAbout2}> HABILIDADES TÉCNICAS </h3>
             <div className={styles.parrafoAbout}>
-            <p className={styles.parrafoAbout2}>
-              {" "}
-              Cuento con un conjunto diverso de habilidades técnicas. Desde
-              HTML, CSS y JS hasta React, NextJs, Redux y Express, mi
-              experiencia me permite abordar proyectos tanto en el frontend como
-              en el backend. Además, estoy familiarizada con bases de datos como
-              MongoDB, Mongoose, PostgreSQL y Sequelize, lo que me hace{" "}
-              <strong>
+              <p className={styles.parrafoAbout2}>
                 {" "}
-                versátil y capaz de enfrentar una variedad de desafíos.
-              </strong>{" "}
-            </p>
+                Cuento con un conjunto diverso de habilidades técnicas. Desde
+                HTML, CSS y JS hasta React, NextJs, Redux y Express, mi
+                experiencia me permite abordar proyectos tanto en el frontend
+                como en el backend. Además, estoy familiarizada con bases de
+                datos como MongoDB, Mongoose, PostgreSQL y Sequelize, lo que me
+                hace{" "}
+                <strong>
+                  {" "}
+                  versátil y capaz de enfrentar una variedad de desafíos.
+                </strong>{" "}
+              </p>
             </div>
           </div>
           <div className={styles.textAbout2}>
@@ -120,35 +123,35 @@ const Home = () => {
               {" "}
               ENFOQUE EN DISEÑO Y DESARROLLO{" "}
             </h3>
-            <div  className={styles.parrafoAbout}> 
-            <p className={styles.parrafoAbout2}>
-              {" "}
-              Como estudiante de Diseño Industrial poseo una perspectiva única
-              que combina creatividad y funcionalidad. Puedo utilizar mis
-              habilidades de diseño UX/UI con herramientas como Figma para crear
-              productos que sean estéticamente atractivos y fáciles de usar.
-              Esto es esencial para garantizar que los proyectos no solo
-              funcionen bien, sino que también brinden una
-              <strong> experiencia excepcional</strong> al usuario.
-            </p>
+            <div className={styles.parrafoAbout}>
+              <p className={styles.parrafoAbout2}>
+                {" "}
+                Como estudiante de Diseño Industrial poseo una perspectiva única
+                que combina creatividad y funcionalidad. Puedo utilizar mis
+                habilidades de diseño UX/UI con herramientas como Figma para
+                crear productos que sean estéticamente atractivos y fáciles de
+                usar. Esto es esencial para garantizar que los proyectos no solo
+                funcionen bien, sino que también brinden una
+                <strong> experiencia excepcional</strong> al usuario.
+              </p>
             </div>
           </div>
           <div className={styles.textAbout2}>
             <h3 className={styles.titleAbout2}> APRENDIZAJE CONTINUO </h3>
-            <div  className={styles.parrafoAbout}>
-            <p className={styles.parrafoAbout2}>
-              {" "}
-              Mi principal objetivo es seguir creciendo profesionalmente.
-              Siempre estoy en busca de oportunidades desafiantes que me
-              permitan adquirir experiencia y{" "}
-              <strong>
-                ampliar mis conocimientos en el desarrollo y el diseño
-              </strong>
-              . Mi entusiasmo por el crecimiento personal y profesional me
-              impulsa a estar al día con las últimas tendencias y tecnologías,
-              lo que me permite aportar un alto valor a cualquier equipo y
-              proyecto en el que trabaje.
-            </p>
+            <div className={styles.parrafoAbout}>
+              <p className={styles.parrafoAbout2}>
+                {" "}
+                Mi principal objetivo es seguir creciendo profesionalmente.
+                Siempre estoy en busca de oportunidades desafiantes que me
+                permitan adquirir experiencia y{" "}
+                <strong>
+                  ampliar mis conocimientos en el desarrollo y el diseño
+                </strong>
+                . Mi entusiasmo por el crecimiento personal y profesional me
+                impulsa a estar al día con las últimas tendencias y tecnologías,
+                lo que me permite aportar un alto valor a cualquier equipo y
+                proyecto en el que trabaje.
+              </p>
             </div>
           </div>
         </div>
@@ -162,24 +165,73 @@ const Home = () => {
               Mira mis proyectos realizados
             </h4>
           </div>
-          <div className={styles.imageContainer}>
-            <div className={styles.containerCars}>
+          <div className="carousel w-full ">
+            <div id="slide1" className="carousel-item relative w-full ">
               <a href="https://pfcargo.netlify.app" target="_blank">
-                <img className={styles.cars} src={cars} alt="cars" />
-                <div className={styles.middle}>
-                  <h3 className={styles.text}> CarGO </h3>
-                  <h2 className={styles.textCar}> E-commerce </h2>
-                </div>
+                <img src={cars} className="w-full items-center" />
               </a>
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slide2" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
             </div>
-            <div className={styles.containerCars}>
+            <div id="slide2" className="carousel-item relative w-full">
               <a href="https://dogs-henry-two.vercel.app" target="_blank">
-                <img className={styles.cars} src={dogs} alt="dogs" />
-                <div className={styles.middle}>
-                  <h3 className={styles.text}> Dogs </h3>
-                  <h2 className={styles.textCar}> App </h2>
-                </div>
+                <img
+                  src={dogs}
+                  className="w-full items-center"
+                />
               </a>
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slide3" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+            <div id="slide3" className="carousel-item relative w-full">
+              <a
+                href="https://www.behance.net/gallery/152514209/Diseno-de-app-para-busqueda-de-eventos"
+                target="_blank"
+              >
+                <img
+                  src={event}
+                  className="w-full items-center"
+                />
+              </a>
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slide4" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
+            </div>
+            <div id="slide4" className="carousel-item relative w-full">
+              <a
+                href="https://www.behance.net/gallery/152514209/Diseno-de-app-para-busqueda-de-eventos"
+                target="_blank"
+              >
+                <img
+                  src={cook}
+                  className="w-full items-center"
+                />
+              </a>
+              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" className="btn btn-circle">
+                  ❮
+                </a>
+                <a href="#slide1" className="btn btn-circle">
+                  ❯
+                </a>
+              </div>
             </div>
           </div>
           <div className={styles.downloadContainer}>

@@ -42,7 +42,7 @@
 .logoFooter{
   align-items: center;
   justify-content: center;
-  width: 50%;
+  width: 100%;
   height: 70px;
   margin-top: -20px;
   margin-bottom: 20px;
@@ -52,4 +52,20 @@
     transform: scale(1.2);
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 500px) {
+  .dividerFoot2{
+    width: 50%;
+    height: 1.2px;
+    background-color: #066c70a1;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 70px;
+    margin-top: 2px;
+    text-align: center;
+    justify-content: center;
+  }
+    
 }

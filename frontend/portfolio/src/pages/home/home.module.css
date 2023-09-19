@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +11,12 @@
 .title {
   padding: 60px;
   width: 800px;
-  font-size: 7vw;
+  font-size: 6vw;
   white-space: normal;
   color: aliceblue;
   font-weight: 1000;
   font-family: Poppins;
+  overflow-y: hidden;
 }
 
 .span {
@@ -117,11 +122,14 @@ body {
   border: 2.6px solid aliceblue;
   margin-left: 60px;
   font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+  Arial, sans-serif;
 }
 
 .buttonHome {
   display: inline-block;
-  padding: 12px 24px;
+  padding: 14px 24px;
   border-radius: 4px;
   transition: all 0.2s ease-in;
   position: relative;
@@ -369,16 +377,18 @@ body {
   padding-bottom: 30px;
 }
 
-.middle {
+.rounded-box {
+  opacity: 1;
+  display: block;
+  width: 95%;
+  height: auto;
   transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  backface-visibility: hidden;
+  border-radius: 5px;
+  margin-left: 20px;
+  padding-bottom: 30px;
 }
+
 
 .containerCars:hover .cars {
   opacity: 0.3;
