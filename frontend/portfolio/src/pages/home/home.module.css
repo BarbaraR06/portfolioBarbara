@@ -19,7 +19,6 @@
   overflow-y: hidden;
 }
 
-
 .span {
   animation: background 20s linear infinite;
   background-clip: text;
@@ -125,7 +124,7 @@ body {
   font-size: 20px;
   color: rgb(255, 255, 255);
   font-family: "Poppins", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
-  Arial, sans-serif;
+    Arial, sans-serif;
 }
 
 .buttonHome {
@@ -184,15 +183,15 @@ body {
 .twoColumns {
   display: flex;
   flex-direction: row;
-  margin-bottom: 150px;
 }
 
-.twoColumns > .colorColumn {
+.colorColumn {
   flex: 1;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  animation: gradient 7s ease infinite;
-  height: 800px;
+  animation: gradient 15s ease infinite;
+  height: 1500px;
+  width: 100%;
 }
 
 @keyframes gradient {
@@ -207,9 +206,8 @@ body {
   }
 }
 
-.twoColumns > .textColumn {
+.textColumn {
   flex: 1;
-  padding: 20px;
 }
 
 .section-transition {
@@ -236,27 +234,33 @@ body {
 
 .textColumn {
   background-color: #203a41;
+  align-items: center;
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .textAbout {
   color: aliceblue;
-  font-weight: 1;
   font-size: 23px;
-  margin-left: 80px;
   line-height: 35px;
   font-family: "Poppins", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
+  width: 100%;
 }
 
 .icons {
-  width: 100%;
+  width: 110%;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(5, 1fr);
-  margin-left: 10%;
-  margin-top: 3%;
+  margin-top: 30px;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
 }
+
+
 
 .titleAbout {
   color: #10e0e7;
@@ -281,49 +285,6 @@ body {
 /**About2**/
 
 
-.containerAbout2 {
-  display: flex;
-  align-items: center;
-  flex-direction:row;
-  justify-content: space-between;
-  align-items: flex-start; 
-}
-
-.textAbout2 {
-  font-family: Poppins;
-  color: aliceblue;
-  font-size: 16px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  margin-right: 10px;
-}
-
-.titleAbout2 {
-  margin-bottom: 20px;
-  font-family: "Poppins", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
-    Arial, sans-serif;
-  color: #10e0e7;
-  font-weight: 500;
-  font-size: 20px;
-  text-align: center;
-}
-
-.parrafoAbout2 {
-  border-radius: 10px;
-  text-align: center;
-  width: 100%;
-  align-items: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-
-}
-
-.parrafoAbout{
-  background-color: #2d4747;
-  margin-left: 3px;
-  margin-right: 3px;
-  border-radius: 5px;
-}
 
 /**Work**/
 .titleWork {
@@ -346,8 +307,6 @@ body {
   font-weight: 1000;
   width: 100%;
 }
-
-
 
 .contact {
   margin-left: 20px;
@@ -443,10 +402,6 @@ body {
   color: white;
   border: 1px solid rgb(255, 255, 255);
 }
-
-
-
-
 
 @media screen and (max-width: 500px) {
   .home {
