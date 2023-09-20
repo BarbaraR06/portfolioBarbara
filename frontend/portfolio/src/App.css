@@ -1,2 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 
+.carousel{
+    width: 100%;
+    align-items: center;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 50px;
+    margin-top: -10px;
+    display: flex;
+}
+
+.carousel-item{
+    object-fit: cover;
+    object-position: center;
+    justify-content: center;
+}
+
+.carousel-item img{
+ width: 800px;
+ height: 450px;
+ border-radius: 20px;
+}
+
+
+@media screen and (max-width: 500px){
+    .carousel-item img{
+        width: 300px;
+        height: 170px;
+        border-radius: 20px;
+       }
+
+
+       .carousel{
+        width: 100%;
+        align-items: center;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 50px;
+        margin-top: -10px;
+        display: flex;
+    }
+}

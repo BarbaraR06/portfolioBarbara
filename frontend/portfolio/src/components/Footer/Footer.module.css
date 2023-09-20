@@ -48,12 +48,30 @@
   margin-bottom: 20px;
   }
 
-  .logoFooter:hover {
-    transform: scale(1.2);
-    transition: transform 0.3s ease-in-out;
-    cursor: pointer;
+
+.logoFooter{
+  animation-name: flash;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
 }
 
+@keyframes flash {
+  0% {
+    opacity: 0.2;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @media screen and (max-width: 500px) {
   .dividerFoot2{

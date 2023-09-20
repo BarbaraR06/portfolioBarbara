@@ -40,7 +40,10 @@ const Home = () => {
             <img src={pfp} alt="" className={styles.imgPfp} />
           </div>
           <a href="#work">
-            <button className={styles.buttonHome}> ¡MIRA MIS PROYECTOS! </button>
+            <button className={styles.buttonHome}>
+              {" "}
+              ¡MIRA MIS PROYECTOS!{" "}
+            </button>
           </a>
         </div>
       </section>
@@ -181,10 +184,7 @@ const Home = () => {
             </div>
             <div id="slide2" className="carousel-item relative w-full">
               <a href="https://dogs-henry-two.vercel.app" target="_blank">
-                <img
-                  src={dogs}
-                  className="w-full items-center"
-                />
+                <img src={dogs} className="w-full items-center" />
               </a>
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide1" className="btn btn-circle">
@@ -200,10 +200,7 @@ const Home = () => {
                 href="https://www.behance.net/gallery/152514209/Diseno-de-app-para-busqueda-de-eventos"
                 target="_blank"
               >
-                <img
-                  src={event}
-                  className="w-full items-center"
-                />
+                <img src={event} className="w-full items-center" />
               </a>
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide2" className="btn btn-circle">
@@ -216,13 +213,10 @@ const Home = () => {
             </div>
             <div id="slide4" className="carousel-item relative w-full">
               <a
-                href="https://www.behance.net/gallery/152514209/Diseno-de-app-para-busqueda-de-eventos"
+                href="https://www.behance.net/gallery/178890921/gourmArt-Recipes-website"
                 target="_blank"
               >
-                <img
-                  src={cook}
-                  className="w-full items-center"
-                />
+                <img src={cook} className="w-full items-center" />
               </a>
               <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                 <a href="#slide3" className="btn btn-circle">
@@ -234,17 +228,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className={styles.downloadContainer}>
-            <a
-              className={styles.download}
-              target="_blank"
-              href="https://drive.google.com/file/d/1BYLIQkAfxK_Cl3cr7dLMzsLMl50PgYze/view?usp=sharing"
-              download="https://drive.google.com/file/d/1BYLIQkAfxK_Cl3cr7dLMzsLMl50PgYze/view?usp=sharing"
-            >
-              {" "}
-              Descargar CV
-            </a>
-          </div>
+
           <div className={styles.dividerContainer}>
             <span className={styles.divider}></span>
           </div>
@@ -263,6 +247,17 @@ const Home = () => {
               <IconMail className={styles.emailIcon} /> barbararuiz063@gmail.com{" "}
             </a>
           </div>
+        </div>
+        <div className={styles.downloadContainer}>
+          <a
+            className={styles.download}
+            target="_blank"
+            href="https://drive.google.com/file/d/1BYLIQkAfxK_Cl3cr7dLMzsLMl50PgYze/view?usp=sharing"
+            download="https://drive.google.com/file/d/1BYLIQkAfxK_Cl3cr7dLMzsLMl50PgYze/view?usp=sharing"
+          >
+            {" "}
+            Descargar CV
+          </a>
         </div>
       </section>
       <Footer />

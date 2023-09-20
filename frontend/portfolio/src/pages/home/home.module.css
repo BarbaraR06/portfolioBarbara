@@ -19,6 +19,7 @@
   overflow-y: hidden;
 }
 
+
 .span {
   animation: background 20s linear infinite;
   background-clip: text;
@@ -190,9 +191,8 @@ body {
   flex: 1;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 7s ease infinite;
   height: 800px;
-  width: 100%;
 }
 
 @keyframes gradient {
@@ -347,71 +347,7 @@ body {
   width: 100%;
 }
 
-.workColumn {
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-}
 
-.imageContainer {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 150px;
-}
-
-.containerCars {
-  position: relative;
-  width: 50%;
-  overflow-y: hidden;
-}
-
-.cars {
-  opacity: 1;
-  display: block;
-  width: 95%;
-  height: auto;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-  border-radius: 5px;
-  margin-left: 20px;
-  padding-bottom: 30px;
-}
-
-.rounded-box {
-  opacity: 1;
-  display: block;
-  width: 95%;
-  height: auto;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-  border-radius: 5px;
-  margin-left: 20px;
-  padding-bottom: 30px;
-}
-
-
-.containerCars:hover .cars {
-  opacity: 0.3;
-}
-
-.containerCars:hover .middle {
-  opacity: 1;
-}
-
-.text {
-  color: rgb(255, 255, 255);
-  font-size: 50px;
-  padding: 16px 32px;
-}
-
-.textCar {
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  padding: 16px 32px;
-  margin-top: -60px;
-  font-weight: 300;
-  margin-top: 10px;
-}
 
 .contact {
   margin-left: 20px;
@@ -478,38 +414,35 @@ body {
 }
 
 .downloadContainer {
-  display: flex;
-  font-family: "Poppins", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
-    Arial, sans-serif;
-  width: 105%;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  margin-left: 20px;
+  margin-top: -100px;
+  margin-bottom: 150px;
 }
 
 .download {
+  display: flex;
   text-align: center;
   background-color: #ffffff;
-  padding: 10px;
+  padding: 12px;
   border-radius: 5px;
   color: black;
   text-decoration: none;
-  margin-bottom: 20px;
   font-family: "Poppins", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
   font-size: 15px;
   font-weight: lighter;
   justify-content: center;
   align-items: center;
+  width: 12%;
 }
 
 .download:hover {
   background-color: #ff6600;
-  scale: 1.2;
+  scale: 1;
   color: white;
   border: 1px solid rgb(255, 255, 255);
 }
-
-
 
 
 
