@@ -2,21 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
+
 * {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
+.home {
+  width: 100%;
+  height: 100%;
+  background-color: #369a92;
+  overflow-y: hidden;
+}
+
+.containerHome {
+  top: 0;
+  overflow-y: hidden;
+  display: flex;
+}
+
 .title {
-  padding: 60px;
-  width: 800px;
+  margin-left: 3%;
+  width: 50%;
   font-size: 6vw;
-  white-space: normal;
   color: aliceblue;
-  font-weight: 1000;
+  font-weight: 900;
   font-family: Poppins;
   overflow-y: hidden;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+
+.homePhoto {
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+  height: auto;
+  justify-content: space-between;
+}
+
+.imgPfp {
+  width: 23%;
+  border-radius: 50%;
+  overflow-y: hidden;
+  margin-right: 8%;
+  margin-top: 2%;
+}
+
+.buttonHome {
+  padding: 14px 25px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  text-align: center;
+  text-decoration: none;
+  border: 2.6px solid aliceblue;
+  margin-left: 3%;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+.buttonHome {
+  display: flex;
+  margin-bottom: 12%;
+  padding: 14px 24px;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  font-size: 18px;
+  z-index: 1;
+  margin-top: 10%;
 }
 
 .span {
@@ -24,16 +84,14 @@
   background-clip: text;
   background-image: linear-gradient(
     90deg,
-    rgba(150, 48, 30, 1) 0%,
+    rgb(216, 54, 26) 0%,
     rgb(133, 17, 187) 10%,
     rgb(202, 63, 21) 20%,
-    rgb(204, 143, 29) 30%,
-    rgb(246, 246, 247) 40%,
-    rgba(84, 16, 67, 1) 50%,
-    rgb(54, 109, 52) 60%,
-    rgb(206, 47, 19) 70%,
-    rgb(112, 7, 16) 80%,
-    rgba(150, 48, 30, 1) 90%,
+    rgb(212, 95, 95) 30%,
+    rgb(211, 145, 22) 40%,
+    rgb(179, 23, 140) 50%,
+    rgb(231, 85, 153) 70%,
+    rgb(206, 115, 99) 90%,
     rgba(199, 201, 88, 1) 100%
   );
   background-size: 1000% 100%;
@@ -42,13 +100,13 @@
 }
 
 .span:nth-child(1) {
-  font-size: 7vw;
+  font-size: 6vw;
   line-height: 85%;
   text-indent: -0.33em;
 }
 
 .span:nth-child(2) {
-  font-size: vw;
+  font-size: 6vw;
   line-height: 69%;
   word-spacing: -0.2em;
   text-indent: -0.07em;
@@ -89,54 +147,9 @@ body {
   background-color: #203a41;
 }
 
-.home {
-  width: 100%;
-  background-color: #369a92;
-}
 
-.homePhoto {
-  display: flex;
-  align-items: center;
-}
 
-.imgPfp {
-  width: 30%;
-  height: 30%;
-  border-radius: 50%;
-  margin-top: 100px;
-}
 
-.containerHome {
-  height: 660px;
-  top: 0;
-  width: 100%;
-}
-
-.buttonHome {
-  padding: 14px 25px;
-  font: inherit;
-  cursor: pointer;
-  outline: inherit;
-  text-align: center;
-  text-decoration: none;
-  border: 2.6px solid aliceblue;
-  margin-left: 60px;
-  font-size: 20px;
-  color: rgb(255, 255, 255);
-  font-family: "Poppins", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
-    Arial, sans-serif;
-}
-
-.buttonHome {
-  display: inline-block;
-  padding: 14px 24px;
-  border-radius: 4px;
-  transition: all 0.2s ease-in;
-  position: relative;
-  overflow: hidden;
-  font-size: 19px;
-  z-index: 1;
-}
 
 .buttonHome:before {
   content: "";
@@ -180,6 +193,9 @@ body {
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
+
+
+
 .twoColumns {
   display: flex;
   flex-direction: row;
@@ -190,7 +206,7 @@ body {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  height: 1500px;
+  height: 1300px;
   width: 100%;
 }
 
@@ -270,6 +286,7 @@ body {
   font-weight: 500;
   padding-top: 90px;
   text-align: center;
+  overflow-y: hidden;
 }
 
 .dividerContainer {
@@ -282,11 +299,18 @@ body {
   border-radius: 5px;
 }
 
-/**About2**/
 
 
 
 /**Work**/
+.workColumn{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+
+
 .titleWork {
   color: #10e0e7;
   font-size: 25px;
@@ -629,4 +653,22 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
   }
+
+
+  .downloadContainer {
+    margin-top: 50px;
+    margin-bottom: 150px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .textos{
+    display: block;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
 }

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Home from './pages/home/home.jsx'
+import Home from "../../portfolio/src/pages/Home/home.jsx"
 import './App.css'
 
 function App() {
