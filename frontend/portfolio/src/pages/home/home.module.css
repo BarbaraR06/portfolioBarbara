@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +32,6 @@
   justify-content: space-between;
   margin-top: 2%;
 }
-
 
 .homePhoto {
   display: flex;
@@ -144,12 +142,14 @@ html {
 }
 
 body {
-  background-color: #203a41;
+  background: rgb(54, 154, 146);
+  background: linear-gradient(
+    180deg,
+    rgba(54, 154, 146, 1) 0%,
+    rgba(54, 154, 146, 1) 75%,
+    rgba(14, 53, 61, 1) 100%
+  );
 }
-
-
-
-
 
 .buttonHome:before {
   content: "";
@@ -193,20 +193,17 @@ body {
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
-
-
-
 .twoColumns {
   display: flex;
   flex-direction: row;
 }
 
 .colorColumn {
-  flex: 1;
+  flex: 0.5;
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
-  height: 1300px;
+  animation: gradient 6s ease infinite;
+  height: 2200px;
   width: 100%;
 }
 
@@ -249,21 +246,22 @@ body {
 }
 
 .textColumn {
-  background-color: #203a41;
   align-items: center;
   text-align: center;
-  margin-left: 40px;
-  margin-right: 40px;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
 .textAbout {
   color: aliceblue;
-  font-size: 23px;
+  font-size: 20px;
   line-height: 35px;
   font-family: "Poppins", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
   width: 100%;
 }
+
+
 
 .icons {
   width: 110%;
@@ -271,19 +269,16 @@ body {
   grid-template-rows: repeat(2, 1fr);
   grid-template-columns: repeat(5, 1fr);
   margin-top: 30px;
-  justify-content: center;
   align-items: center;
   margin-bottom: 80px;
 }
 
-
-
 .titleAbout {
-  color: #10e0e7;
+  color: #ffffff;
   font-family: "Poppins", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
-  font-size: 25px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 800;
   padding-top: 90px;
   text-align: center;
   overflow-y: hidden;
@@ -299,36 +294,36 @@ body {
   border-radius: 5px;
 }
 
-
-
-
 /**Work**/
-.workColumn{
-  display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 2fr 1fr;
+
+.containerWork {
+  margin-top: 20%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 0px;
 }
 
-
-
 .titleWork {
-  color: #10e0e7;
-  font-size: 25px;
-  margin-top: 150px;
+  color: #ffffff;
+  font-size: 20px;
   text-align: center;
   font-family: "Poppins", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
-  font-weight: lighter;
+  font-weight: 800;
 }
 
 .parrafoWork {
   color: #ffffff;
-  font-size: 60px;
+  font-size: 30px;
   margin-top: 20px;
   text-align: center;
   margin-bottom: 50px;
   font-family: Poppins;
-  font-weight: 1000;
+  font-weight: light;
   width: 100%;
 }
 
@@ -380,9 +375,10 @@ body {
 }
 
 .emailIcon {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
+  color:white;
   margin-right: 10px;
 }
 
@@ -399,8 +395,6 @@ body {
 .downloadContainer {
   justify-content: left;
   margin-left: 20px;
-  margin-top: -100px;
-  margin-bottom: 150px;
 }
 
 .download {
@@ -427,54 +421,49 @@ body {
   border: 1px solid rgb(255, 255, 255);
 }
 
+
+
 @media screen and (max-width: 500px) {
-  .home {
-    background-color: #203a41;
-    width: fit-content;
-  }
+
+.inicio{
+  background-color: #369a92;
+  width: 100%;
+}
 
   .homePhoto {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
+
 
   .imgPfp {
-    width: 50%;
-    height: 50%;
-    margin-top: -20px;
+    width: 40%;
+    height: 40%;
     align-items: center;
+    justify-content: center;
+  }
+ 
+  .title{
+    font-size: 3vw;
+  }
+  .span{
+    font-size: 3vw;
   }
 
-  .title {
-    width: 800px;
-    font-size: 75px;
-    text-align: center;
-    color: aliceblue;
-    font-weight: 800;
-    width: 100%;
-  }
 
   .containerHome {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 100%;
+    margin-top: 10%;
   }
 
   .buttonHome {
     align-items: center;
-    margin-top: 50px;
-    width: 55%;
-    justify-content: center;
-  }
-
-  .textColumn {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    text-align: center;
+    margin-left: 0px;
+    justify-content: center;
   }
 
   .titleAbout {
@@ -482,6 +471,7 @@ body {
     text-align: center;
     width: 100%;
   }
+
   .textAbout {
     display: flex;
     text-align: center;
@@ -491,14 +481,14 @@ body {
     width: 100%;
   }
 
+
   .icons {
-    width: 85%;
+    width: 110%;
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-    align-items: center;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
+    align-items: center;
   }
 
   .colorColumn {
@@ -517,17 +507,6 @@ body {
     font-size: 16px;
     margin-left: 15px;
     margin-right: 15px;
-  }
-
-  .titleAbout2 {
-    margin-bottom: 20px;
-    font-family: Poppins;
-    color: #10e0e7;
-    font-weight: 500;
-    font-size: 18px;
-    margin-top: 15px;
-    text-align: center;
-    width: 90%;
   }
 
   .imageContainer {
@@ -647,13 +626,6 @@ body {
     margin-bottom: 100px;
   }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-  }
-
 
   .downloadContainer {
     margin-top: 50px;
@@ -663,7 +635,7 @@ body {
     display: flex;
   }
 
-  .textos{
+  .textos {
     display: block;
     text-align: center;
     width: 100%;
@@ -671,4 +643,94 @@ body {
     align-items: center;
   }
 
+
 }
+
+/**footer**/
+.footer {
+  width: 100%;
+  margin-top: 60%;
+  margin-bottom: 2%;
+}
+
+.dividerFooter {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.dividerFoot {
+  width: 500px;
+  height: 1.2px;
+  background-color: #f7f8f859;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconosFooter {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  gap: 15px;
+  cursor: pointer;
+  justify-content: center;
+  width: 100%;
+}
+
+.iconosFooter :hover {
+  color: #ff6600;
+}
+
+.logoFooter a {
+  height: 90px;
+  margin-top: 10%;
+  margin-bottom: 20px;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logoFooter {
+  animation-name: flash;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0.2;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .dividerFoot2 {
+    width: 50%;
+    height: 1.2px;
+    background-color: #066c70a1;
+    display: inline-block;
+    border-radius: 5px;
+    margin-bottom: 70px;
+    margin-top: 2px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+

@@ -20,8 +20,8 @@
 }
 
 .carousel-item img{
- width: 800px;
- height: 450px;
+ width: 500px;
+ height: 250px;
  border-radius: 20px;
 }
 
@@ -35,7 +35,6 @@
         border-radius: 20px;
        }
 
-
        .carousel{
         width: 100%;
         align-items: center;
@@ -45,4 +44,11 @@
         margin-top: -10px;
         display: flex;
     }
+
+    .bg-base-100 {
+        background-color: #369a92;
+        justify-content: end;
+      }
+
+
 }

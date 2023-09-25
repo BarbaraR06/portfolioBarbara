@@ -11,7 +11,6 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.dividerFooter}>
-        <span className={styles.dividerFoot2}> </span>
         <a href="#home">
           <Logo className={styles.logoFooter} />
         <span className={styles.dividerFoot}></span>

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import Logo from "../../pages/icons/Logo";
 
-
 const Navbar = () => {
   const handleNav = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -14,7 +13,7 @@ const Navbar = () => {
   return (
     <div className={styles.menu}>
       <ul className={styles.list}>
-          <Logo className={styles.logo}/>
+        <Logo className={styles.logo} />
         <li>
           <button className={styles.button} onClick={() => handleNav("about")}>
             {" "}
@@ -22,7 +21,12 @@ const Navbar = () => {
           </button>
         </li>
         <li>
-          <button className={styles.button} onClick={() => handleNav("work")}>
+          <button
+            className={styles.button}
+            onClick={() => {
+              window.location.hash = "#carousel";
+            }}
+          >
             {" "}
             PROYECTOS{" "}
           </button>
@@ -30,7 +34,8 @@ const Navbar = () => {
         <li>
           <button
             className={styles.button2}
-            onClick={() => handleNav("contact")}
+            onClick={() => window.location.hash = "#footer" 
+          }
           >
             {" "}
             CONTACT ME{" "}
