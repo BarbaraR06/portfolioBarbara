@@ -34,14 +34,14 @@ const Navbar = () => {
         <li>
           <button
             className={styles.button2}
-            onClick={() => window.location.hash = "#footer" 
-          }
+            onClick={() => (window.location.hash = "#contact")}
           >
             {" "}
             CONTACT ME{" "}
           </button>
         </li>
       </ul>
+      <hr class="-mt-0.5 my-12 h-0.5 border-t-0 bg-neutral-300 opacity-200 dark:opacity-50" />
     </div>
   );
 };

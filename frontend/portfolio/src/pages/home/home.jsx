@@ -21,11 +21,14 @@ import IconBehanceSquare from "../icons/IconBehanceSquare";
 import IconGithub from "../icons/Github";
 import Logo from "../icons/Logo";
 import IconMail from "../icons/IconMail";
+import { useState } from "react";
 
 const Home = () => {
+  const [abierto, setAbierto] = useState(false);
+
   return (
     <div className={styles.inicio}>
-      <Navbar/>
+      <Navbar />
       <section className={styles.home} id="home">
         <div className={styles.containerHome}>
           <div className={styles.homePhoto}>
@@ -156,7 +159,7 @@ const Home = () => {
           <div className={styles.containerWork}>
             <div id="carousel" className={styles.workColumn}>
               <h5 className={styles.titleWork}>PROYECTOS</h5>
-              <h4  className={styles.parrafoWork}>
+              <h4 className={styles.parrafoWork}>
                 Mira mis proyectos realizados
               </h4>
               <div className="carousel w-full">
@@ -253,14 +256,35 @@ const Home = () => {
               </button>
             </div>
           </div>
+          <div id="contact" className={styles.contactMe}>
+            <h5 className={styles.titleContact}>CONTACTAME</h5>
+            <div
+              onClick={() => setAbierto(!abierto)}
+              className={styles.contactoContainer}
+            >
+              <h4 className={styles.parrafoContact}> ¡Enviame un correo! </h4>
+              <IconMail className={styles.emailIcon} />
+            </div>
+            {abierto && (
+              <a
+                
+                href="mailto:barbararuiz063@gmail.com"
+              >
+                <p className={styles.emailText}>barbararuiz063@gmail.com</p>
+              </a>
+            )}
+          </div>
           <div id="footer" className={styles.footer}>
             <div className={styles.dividerFooter}>
               <div className={styles.logoContainer}>
-                <a href="#top" >
+                <a href="#top">
                   <Logo className={styles.logoFooter} />
                 </a>
               </div>
               <span className={styles.dividerFoot}></span>
+                <p className={styles.seguime}>
+                  Seguime en mis redes
+                </p>
               <div className={styles.iconosFooter}>
                 <a target="_blank" href="https://www.behance.net/barbararuiz06">
                   <IconBehanceSquare width="40px" height="40px" />
@@ -273,12 +297,6 @@ const Home = () => {
                 </a>
                 <a target="_blank" href="https://github.com/BarbaraR06">
                   <IconGithub width="40px" height="40px" />
-                </a>
-                <a
-                  className={styles.emailText}
-                  href="mailto:barbararuiz063@gmail.com"
-                >
-                  <IconMail className={styles.emailIcon} />
                 </a>
               </div>
             </div>
